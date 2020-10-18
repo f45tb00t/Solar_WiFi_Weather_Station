@@ -46,7 +46,7 @@ Changes in V2.34
 
 Changes in V2.34.2
 - Code cleanup due to the fact that I dont need Blynk, MQTT, and Thingspeak. To have it more lightweight.
-- Implemented influxDB to log into a influxDB over WiFI to visualize the data with Grafana. Thanks to FrankUlbrich for his work!
+- Implemented influxDB to log into an influxDB over WiFI to visualize the data with Grafana. Thanks to FrankUlbrich for his work!
 - Fixed the behavior how the Wifi Connection is established. 
 - additional variable added for naming the device. 
 
