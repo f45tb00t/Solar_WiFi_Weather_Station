@@ -44,21 +44,28 @@ Changes in V2.34
 - added August-Roche-Magnus approximation to automatically adjust humidity with temperature corrections
 - Code cleanup
 
+Changes in V2.34.2
+- Code cleanup due to the fact that I dont need Blynk, MQTT, and Thingspeak. To have it more lightweight.
+- Implemented influxDB to log into a influxDB over WiFI to visualize the data with Grafana. Thanks to FrankUlbrich for his work!
+- Fixed the behavior how the Wifi Connection is established. 
+- additional variable added for naming the device. 
+
+Note: In my point of view its a security issue when the ESP8266 creates a open and unencrypted Wifi AP every time it wakes up. This should be fixed with the code. 
+
+Note_2: Thanks a lot to all the contributors of this! Without you people this would not have been possible. 
+
+Note_3: It seems that the new code of u3kdelta is using even less power. I used before the code of FrankUlbrich and changed it to my needs. 
+
 Print the box yourself: https://www.thingiverse.com/thing:3551386
 
 [![Solar Wifi Weather Station](https://github.com/3KUdelta/Solar_WiFi_Weather_Station/blob/master/IMG_2951.jpg)](https://github.com/3KUdelta/Solar_WiFi_Weather_Station)
 
-Blynk Example (here: German version):
-[![Solar Wifi Weather Station](https://github.com/3KUdelta/Solar_WiFi_Weather_Station/blob/master/IMG_2997.PNG)](https://github.com/3KUdelta/Solar_WiFi_Weather_Station)
 
-Blynk project settings. Get Blynk in AppStore or GooglePlay and scan QR Code. You might need to purchase Blynk energy to load full project. 3'600 Energy needed for Blynk.
-[![Solar Wifi Weather Station](https://github.com/3KUdelta/Solar_WiFi_Weather_Station/blob/master/IMG_3036.JPG)](https://github.com/3KUdelta/Solar_WiFi_Weather_Station)
+
 
 Showing the data on a LED display: https://github.com/3KUdelta/MDparola_MQTT_monitor
 [![LED matrix MQTT monitor](https://github.com/3KUdelta/MDparola_MQTT_monitor/blob/master/pictures/IMG_3180.JPG)](https://github.com/3KUdelta/MDparola_MQTT_monitor)
 
-Node-Red example showing MQTT messages on dashboard.
-[![Solar Wifi Weather Station](https://github.com/3KUdelta/Solar_WiFi_Weather_Station/blob/master/Node-Red-Dashboard.png)](https://github.com/3KUdelta/Solar_WiFi_Weather_Station)
 
-ThinkSpeak Example (ThingView iOS):
-[![Solar Wifi Weather Station](https://github.com/3KUdelta/Solar_WiFi_Weather_Station/blob/master/IMG_2617B43DD8C8-1.jpeg)](https://github.com/3KUdelta/Solar_WiFi_Weather_Station)
+
+
