@@ -50,7 +50,7 @@ Changes in V2.34.2
 - Fixed the behavior how the Wifi Connection is established. 
 - additional variable added for naming the device. 
 
-Note: In my point of view its a security issue when the ESP8266 creates a open and unencrypted Wifi AP every time it wakes up. This should be fixed with the code. 
+Note: In my point of view its a security issue when the ESP8266 creates an open and unencrypted Wifi AP every time it wakes up. This should be fixed with the code. 
 
 Note_2: Thanks a lot to all the contributors of this! Without you people this would not have been possible. 
 
